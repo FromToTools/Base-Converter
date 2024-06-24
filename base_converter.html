@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base Converter</title>
+    <link rel="stylesheet" type="text/css" href="base_calculator.css" />
+</head>
+<body>
+<div class="converter">
+    <div class="dropdown">
+        <label for="fromNumber">From:</label>
+        <select id="fromNumber">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hex">Hex</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <label for="toNumber">To:</label>
+        <select id="toNumber">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hex">Hex</option>
+        </select>
+    </div>
+    <div class="input-output">
+        <label for="inputNumber">Input:</label>
+        <textarea id="inputNumber" rows="4"></textarea>
+    </div>
+    <div class="input-output">
+        <label for="outputNumber">Output:</label>
+        <textarea id="outputNumber" rows="4" readonly></textarea>
+    </div>
+    <button class="convert-btn" id="btnNumberConvert">Convert</button>
+</div>
+<script src="base_converter.js"></script>
+</body>
+</html>

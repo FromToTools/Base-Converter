@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Base Converter",
+  "version": "1.0",
+
+  "description": "A base conversion calculator.",
+  "homepage_url": "https://fromtotools.com/",
+  "icons": {
+    "48": "icons/icon_48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon_192.png",
+    "default_title": "Base Converter",
+    "default_popup": "base_converter.html"
+  },
+
+  "sidebar_action": {
+    "default_panel": "base_converter.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png"
+    },
+    "default_title": "Base Converter"
+  },
+
+  "content_security_policy": "default-src 'self'",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
